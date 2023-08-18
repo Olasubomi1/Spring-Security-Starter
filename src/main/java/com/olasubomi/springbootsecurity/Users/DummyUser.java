@@ -2,6 +2,7 @@ package com.olasubomi.springbootsecurity.Users;
 
 import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,6 +11,8 @@ import java.util.Collection;
 import java.util.List;
 
 @Data
+@Setter
+@Getter
 public class DummyUser implements UserDetails {
     @Setter(AccessLevel.NONE) private final String username;
     private final String password;

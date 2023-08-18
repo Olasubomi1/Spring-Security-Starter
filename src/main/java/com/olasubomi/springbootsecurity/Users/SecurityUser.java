@@ -1,6 +1,9 @@
 package com.olasubomi.springbootsecurity.Users;
 
+import jakarta.persistence.Entity;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -16,9 +19,10 @@ import java.util.List;
    the User entity class and adds the needed code related to the Spring Security con-tract
    without mixing the code into a JPA entity, thereby implementing multiple different tasks.
  */
-@Data
+
 public class SecurityUser implements UserDetails {
-    private final User user;
+    private User user;
+
 
     public SecurityUser(User user) {
         this.user = user;
