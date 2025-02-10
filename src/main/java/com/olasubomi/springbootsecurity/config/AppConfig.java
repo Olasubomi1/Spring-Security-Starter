@@ -15,6 +15,7 @@ import java.util.List;
 
 @Configuration
 public class AppConfig {
+    /// This is a configuration file
 //    @Bean
 //    public UserDetailsService userDetailsService(){
 //        UserDetails u = new UserManagementConfig().userDetailService();
